@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
-import se.kth.kebiche.labb1dis.bo.ShoppingCart;
+import se.kth.kebiche.labb1dis.bo.CartHandler;
 import se.kth.kebiche.labb1dis.bo.UserHandler;
 
 @WebServlet("/login")
@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         if (UserHandler.login(username, password)) {
             HttpSession session = req.getSession();
             session.setAttribute("username", username);
-            session.setAttribute("cart", new ShoppingCart());
+            session.setAttribute("cart", CartHandler.createCart());
             resp.sendRedirect(req.getContextPath() + "/shop");
         } else {
             req.setAttribute("error", "Fel användarnamn eller lösenord");

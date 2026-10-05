@@ -1,14 +1,13 @@
-<%@ page import="se.kth.kebiche.labb1dis.bo.ShoppingCart" %>
+<%@ page import="se.kth.kebiche.labb1dis.ui.ShoppingCartInfo" %>
 <%
-    ShoppingCart cart = (ShoppingCart) session.getAttribute("cart");
+    ShoppingCartInfo cartInfo = (ShoppingCartInfo) request.getAttribute("cartInfo");
     String ctx = request.getContextPath();
 %>
 <header>
-  <span class="brand">Webbshoppen</span>
-  <nav>
-    <a href="<%= ctx %>/shop">Butik</a>
-    <a href="<%= ctx %>/cart">Kundvagn (<%= cart.getItemCount() %>)</a>
-    <span class="user">Inloggad som <%= session.getAttribute("username") %></span>
-    <a href="<%= ctx %>/logout">Logga ut</a>
-  </nav>
+  <b>Webbshoppen</b>
+  <a href="<%= ctx %>/shop">Butik</a>
+  <a href="<%= ctx %>/cart">Kundvagn (<%= cartInfo.getItemCount() %>)</a>
+  Inloggad som <%= session.getAttribute("username") %>
+  <a href="<%= ctx %>/logout">Logga ut</a>
 </header>
+<hr>

@@ -6,8 +6,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import se.kth.kebiche.labb1dis.bo.Item;
-import se.kth.kebiche.labb1dis.bo.ItemHandler;
+import se.kth.kebiche.labb1dis.bo.CartHandler;
 import se.kth.kebiche.labb1dis.bo.ShoppingCart;
 
 @WebServlet("/cart")
@@ -15,6 +14,8 @@ public class CartServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ShoppingCart cart = (ShoppingCart) req.getSession().getAttribute("cart");
+        req.setAttribute("cartInfo", CartHandler.getCart(cart));
         req.getRequestDispatcher("/WEB-INF/views/cart.jsp").forward(req, resp);
     }
 
@@ -26,13 +27,10 @@ public class CartServlet extends HttpServlet {
 
         if ("add".equals(action)) {
             int quantity = toNumber(req.getParameter("quantity"));
-            Item item = ItemHandler.getItem(itemId);
-            if (item != null && quantity >= 1 && quantity <= 99) {
-                cart.addItem(item, quantity);
-            }
+            CartHandler.addItem(cart, itemId, quantity);
             resp.sendRedirect(req.getContextPath() + "/shop");
         } else if ("remove".equals(action)) {
-            cart.removeItem(itemId);
+            CartHandler.removeItem(cart, itemId);
             resp.sendRedirect(req.getContextPath() + "/cart");
         }
     }
