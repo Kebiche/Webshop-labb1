@@ -1,4 +1,4 @@
-<%@ page import="se.kth.kebiche.labb1dis.ui.ShoppingCartInfo" %>
+<%@ page import="ui.ShoppingCartInfo" %>
 <%
     ShoppingCartInfo cartInfo = (ShoppingCartInfo) request.getAttribute("cartInfo");
     String ctx = request.getContextPath();

@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.bo;
+package bo;
 
 import java.util.ArrayList;
 

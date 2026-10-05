@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.ui;
+package ui;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

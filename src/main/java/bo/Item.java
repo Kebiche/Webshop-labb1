@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.bo;
+package bo;
 
 public class Item {
 

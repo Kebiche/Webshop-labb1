@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.ui;
+package ui;
 
 import java.util.ArrayList;
 

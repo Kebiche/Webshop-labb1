@@ -1,9 +1,9 @@
-package se.kth.kebiche.labb1dis.bo;
+package bo;
 
 import java.util.ArrayList;
-import se.kth.kebiche.labb1dis.db.ItemDB;
-import se.kth.kebiche.labb1dis.ui.CartItemInfo;
-import se.kth.kebiche.labb1dis.ui.ShoppingCartInfo;
+import db.ItemDB;
+import ui.CartItemInfo;
+import ui.ShoppingCartInfo;
 
 public class CartHandler {
 

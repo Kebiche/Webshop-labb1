@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.ui;
+package ui;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

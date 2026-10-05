@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.ui;
+package ui;
 
 public class CartItemInfo {
 

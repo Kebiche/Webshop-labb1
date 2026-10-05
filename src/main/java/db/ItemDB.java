@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.db;
+package db;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
-import se.kth.kebiche.labb1dis.bo.Item;
+import bo.Item;
 
 public class ItemDB extends Item {
 

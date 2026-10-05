@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.db;
+package db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

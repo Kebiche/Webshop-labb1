@@ -1,6 +1,6 @@
-package se.kth.kebiche.labb1dis.bo;
+package bo;
 
-import se.kth.kebiche.labb1dis.db.UserDB;
+import db.UserDB;
 
 public class UserHandler {
 

@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.ui;
+package ui;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -7,8 +7,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
-import se.kth.kebiche.labb1dis.bo.CartHandler;
-import se.kth.kebiche.labb1dis.bo.UserHandler;
+import bo.CartHandler;
+import bo.UserHandler;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {

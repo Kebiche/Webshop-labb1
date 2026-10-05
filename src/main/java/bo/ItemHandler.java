@@ -1,9 +1,9 @@
-package se.kth.kebiche.labb1dis.bo;
+package bo;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import se.kth.kebiche.labb1dis.db.ItemDB;
-import se.kth.kebiche.labb1dis.ui.ItemInfo;
+import db.ItemDB;
+import ui.ItemInfo;
 
 public class ItemHandler {
 

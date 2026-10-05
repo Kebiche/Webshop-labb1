@@ -1,4 +1,4 @@
-package se.kth.kebiche.labb1dis.ui;
+package ui;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -6,8 +6,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import se.kth.kebiche.labb1dis.bo.CartHandler;
-import se.kth.kebiche.labb1dis.bo.ShoppingCart;
+import bo.CartHandler;
+import bo.ShoppingCart;
 
 @WebServlet("/cart")
 public class CartServlet extends HttpServlet {

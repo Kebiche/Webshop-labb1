@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="se.kth.kebiche.labb1dis.ui.CartItemInfo" %>
+<%@ page import="ui.CartItemInfo" %>
 <!DOCTYPE html>
 <html lang="sv">
 <head>
